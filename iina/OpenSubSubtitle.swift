@@ -89,7 +89,7 @@ class OpenSubSupport {
 
   private let chunkSize: Int = 65536
   private let apiPath = "https://api.opensubtitles.org:443/xml-rpc"
-  private static let serviceName: NSString = "IINA OpenSubtitles Account"
+  private static let serviceName = "IINA OpenSubtitles Account"
   private let xmlRpc: JustXMLRPC
 
   var language: String
@@ -272,42 +272,45 @@ class OpenSubSupport {
     let service = OpenSubSupport.serviceName as NSString
     let accountName = username as NSString
     let pw = passwd as NSString
-    let pwData = pw.data(using: String.Encoding.utf8.rawValue)! as NSData
+    let pwData = passwd.data(using: String.Encoding.utf8)!
 
     let status: OSStatus
     // try read password
     let (readResult, _, readItemRef) = findPassword(username: username)
     if readResult == errSecSuccess {
       // else, try modify the password
-      status = SecKeychainItemModifyContent(readItemRef!,
+      status = pwData.withUnsafeBytes({ (pwPtr: UnsafePointer<UInt8>) -> OSStatus in
+        return SecKeychainItemModifyContent(readItemRef!,
                                             nil,
-                                            UInt32(pw.length),
-                                            pwData.bytes)
+                                            UInt32(pwData.count),
+                                            pwPtr)
+      })
     } else {
       // if can't read, try add password
-      status = SecKeychainAddGenericPassword(nil,
-                                             UInt32(service.length),
-                                             service.utf8String,
-                                             UInt32(accountName.length),
-                                             accountName.utf8String,
-                                             UInt32(pw.length),
-                                             pwData.bytes,
+      status = pwData.withUnsafeBytes({ (pwPtr: UnsafePointer<UInt8>) -> OSStatus in
+        return SecKeychainAddGenericPassword(nil,
+                                             UInt32(service.lengthOfBytes(using: String.Encoding.utf8.rawValue)),
+                                             service as String,
+                                             UInt32(username.lengthOfBytes(using: .utf8)),
+                                             username,
+                                             UInt32(pwData.count),
+                                             pwPtr,
                                              nil)
+      })
     }
     return status
   }
 
   static func findPassword(username: String) -> (OSStatus, String?, SecKeychainItem?) {
     let service = OpenSubSupport.serviceName as NSString
-    let accountName = username as NSString
     var pwLength = UInt32()
     var pwData: UnsafeMutableRawPointer? = nil
     var itemRef: SecKeychainItem? = nil
     let status = SecKeychainFindGenericPassword(nil,
                                                 UInt32(service.length),
                                                 service.utf8String,
-                                                UInt32(accountName.length),
-                                                accountName.utf8String,
+                                                UInt32(username.lengthOfBytes(using: .utf8)),
+                                                username,
                                                 &pwLength,
                                                 &pwData,
                                                 &itemRef)

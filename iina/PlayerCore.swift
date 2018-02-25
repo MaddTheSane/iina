@@ -1406,7 +1406,9 @@ extension PlayerCore: FFmpegControllerDelegate {
 
 @available (macOS 10.13, *)
 class NowPlayingInfoManager {
-  static let info = MPNowPlayingInfoCenter.default()
+  static var info: MPNowPlayingInfoCenter {
+    return MPNowPlayingInfoCenter.default()
+  }
 
   static func updateInfo() {
     var nowPlayingInfo = [String: Any]()
