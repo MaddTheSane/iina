@@ -60,6 +60,11 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>com.real.realmedia</string>
+        <string>com.real.realaudio</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -112,6 +117,11 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>com.apple.flash-video</string>
+        <string>com.adobe.flash.video</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -145,6 +155,11 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>public.3gpp</string>
+        <string>public.3gpp2</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -161,6 +176,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>public.mp3</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -178,6 +197,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>org.xiph.ogg</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -195,6 +218,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>org.xiph.ogv</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -229,6 +256,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>public.avi</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -245,6 +276,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>com.microsoft.waveform-audio</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -262,6 +297,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>public.mpeg-4-audio</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -279,6 +318,12 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>com.microsoft.windows-media-wma</string>
+        <string>com.microsoft.windows-media-wmv</string>
+        <string>com.microsoft.windows-media-wm</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -296,6 +341,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>com.apple.quicktime-movie</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -329,6 +378,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>public.mpeg</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -347,6 +400,10 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>public.mpeg-4</string>
+      </array>
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -374,6 +431,13 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <!--
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>com.divx.divx</string>
+        <string>public.dv-movie</string>
+        <string>public.video</string>
+      </array>-->
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -403,6 +467,15 @@
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
+      <!--
+      <key>LSItemContentTypes</key>
+      <array>
+        <string>public.aifc-audio</string>
+        <string>public.aiff-audio</string>
+        <string>com.apple.coreaudio-format</string>
+        <string>public.audio</string>
+        <string>public.midi-audio</string>
+      </array> -->
 			<key>NSPersistentStoreTypeKey</key>
 			<string>XML</string>
 		</dict>
@@ -501,6 +574,218 @@
 	<string>dsa_pub.pem</string>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
+    <dict>
+      <key>UTTypeConformsTo</key>
+      <array>
+        <string>public.movie</string>
+        <string>public.data</string>
+      </array>
+      <key>UTTypeDescription</key>
+      <string>Adobe Flash Video File</string>
+      <key>UTTypeIconFile</key>
+      <string></string>
+      <key>UTTypeIdentifier</key>
+      <string>com.adobe.flash.video</string>
+      <key>UTTypeReferenceURL</key>
+      <string>http://www.adobe.com/devnet/flv/</string>
+      <key>UTTypeTagSpecification</key>
+      <dict>
+        <key>com.apple.ostype</key>
+        <array>
+          <string>MFLV</string>
+        </array>
+        <key>public.filename-extension</key>
+        <array>
+          <string>flv</string>
+          <string>f4v</string>
+        </array>
+        <key>public.mime-type</key>
+        <array>
+          <string>video/x-flv</string>
+          <string>flv-application/octet-stream</string>
+        </array>
+        <key>public.uti</key>
+        <array>
+          <string>com.apple.flash-video</string>
+        </array>
+      </dict>
+    </dict>
+    <dict>
+      <key>UTTypeConformsTo</key>
+      <array>
+        <string>public.audio</string>
+        <string>public.data</string>
+      </array>
+      <key>UTTypeDescription</key>
+      <string>Ogg Vorbis Audio</string>
+      <key>UTTypeIdentifier</key>
+      <string>org.xiph.ogg</string>
+      <key>UTTypeReferenceURL</key>
+      <string>http://xiph.org/ogg/</string>
+      <key>UTTypeTagSpecification</key>
+      <dict>
+        <key>com.apple.ostype</key>
+        <array>
+          <string>OggS</string>
+        </array>
+        <key>public.filename-extension</key>
+        <array>
+          <string>ogg</string>
+          <string>oga</string>
+        </array>
+        <key>public.mime-type</key>
+        <array>
+          <string>audio/ogg</string>
+          <string>audio/x-ogg</string>
+        </array>
+      </dict>
+    </dict>
+    <dict>
+      <key>UTTypeConformsTo</key>
+      <array>
+        <string>public.movie</string>
+        <string>public.data</string>
+      </array>
+      <key>UTTypeDescription</key>
+      <string>Ogg Video</string>
+      <key>UTTypeIdentifier</key>
+      <string>org.xiph.ogv</string>
+      <key>UTTypeReferenceURL</key>
+      <string>http://xiph.org/ogg/</string>
+      <key>UTTypeTagSpecification</key>
+      <dict>
+        <key>com.apple.ostype</key>
+        <array>
+          <string>OggV</string>
+        </array>
+        <key>public.filename-extension</key>
+        <array>
+          <string>ogv</string>
+          <string>ogm</string>
+        </array>
+        <key>public.mime-type</key>
+        <array>
+          <string>video/ogg</string>
+          <string>video/x-ogg</string>
+        </array>
+      </dict>
+    </dict>
+    <dict>
+      <key>UTTypeConformsTo</key>
+      <array>
+        <string>public.data</string>
+        <string>public.avi</string>
+      </array>
+      <key>UTTypeDescription</key>
+      <string>Divx Movie File</string>
+      <key>UTTypeIconFile</key>
+      <string></string>
+      <key>UTTypeIdentifier</key>
+      <string>com.divx.divx</string>
+      <key>UTTypeReferenceURL</key>
+      <string>http://www.divx.com</string>
+      <key>UTTypeTagSpecification</key>
+      <dict>
+        <key>com.apple.ostype</key>
+        <array>
+          <string>DIVX</string>
+        </array>
+        <key>public.filename-extension</key>
+        <array>
+          <string>divx</string>
+        </array>
+        <key>public.mime-type</key>
+        <array>
+          <string>video/x-divx</string>
+        </array>
+      </dict>
+    </dict>
+    <dict>
+      <key>UTTypeConformsTo</key>
+      <string>public.movie</string>
+      <key>UTTypeDescription</key>
+      <string>RealMedia</string>
+      <key>UTTypeIconFile</key>
+      <string></string>
+      <key>UTTypeIdentifier</key>
+      <string>com.real.realmedia</string>
+      <key>UTTypeTagSpecification</key>
+      <dict>
+        <key>com.apple.ostype</key>
+        <array>
+          <string>PNRM</string>
+        </array>
+        <key>public.filename-extension</key>
+        <array>
+          <string>rm</string>
+          <string>rv</string>
+          <string>rmj</string>
+          <string>rpm</string>
+          <string>rp</string>
+          <string>rt</string>
+          <string>rmvb</string>
+          <string>rmd</string>
+          <string>rms</string>
+          <string>rmx</string>
+          <string>rvx</string>
+        </array>
+        <key>public.mime-type</key>
+        <array>
+          <string>application/vnd.rn-realmedia</string>
+          <string>application/vnd.rn-realmedia-vbr</string>
+          <string>text/vnd.rn-realtext</string>
+          <string>audio/x-pn-realaudio-plugin</string>
+        </array>
+      </dict>
+    </dict>
+    <dict>
+      <key>UTTypeConformsTo</key>
+      <string>public.audio</string>
+      <key>UTTypeDescription</key>
+      <string>RealAudio</string>
+      <key>UTTypeIconFile</key>
+      <string></string>
+      <key>UTTypeIdentifier</key>
+      <string>com.real.realaudio</string>
+      <key>UTTypeTagSpecification</key>
+      <dict>
+        <key>com.apple.ostype</key>
+        <array>
+          <string>PNRA</string>
+        </array>
+        <key>public.filename-extension</key>
+        <array>
+          <string>ra</string>
+          <string>rax</string>
+        </array>
+        <key>public.mime-type</key>
+        <array>
+          <string>audio/vnd.rn-realaudio</string>
+          <string>audio/x-realaudio</string>
+        </array>
+      </dict>
+    </dict>
+    <dict>
+      <key>UTTypeConformsTo</key>
+      <string>public.text</string>
+      <key>UTTypeDescription</key>
+      <string>RealMedia Metafile</string>
+      <key>UTTypeIconFile</key>
+      <string></string>
+      <key>UTTypeIdentifier</key>
+      <string>com.real.ram</string>
+      <key>UTTypeTagSpecification</key>
+      <dict>
+        <key>public.filename-extension</key>
+        <array>
+          <string>ram</string>
+        </array>
+        <key>public.mime-type</key>
+        <array>
+          <string>audio/x-pn-realaudio</string>
+        </array>
+      </dict>
+    </dict>
 		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
@@ -576,25 +861,6 @@
 		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
-				<string>public.movie</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>RealPlayer Media Files</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.realmedia</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>rm</string>
-					<string>ram</string>
-					<string>rmvb</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
 				<string>public.audio</string>
 			</array>
 			<key>UTTypeDescription</key>
@@ -606,42 +872,6 @@
 				<key>public.filename-extension</key>
 				<array>
 					<string>xm</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.audio</string>
-				<string>public.aiff-audio</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>AIFF file</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.aiff</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>aiff</string>
-					<string>aif</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.audio</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>WAVE Audio File</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.wav</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>wav</string>
 				</array>
 			</dict>
 		</dict>
@@ -717,113 +947,6 @@
 		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
-				<string>public.video</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>Ogg Video File</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.ogg-video</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>ogm</string>
-					<string>ogv</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.audio</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>Ogg Audio File</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.ogg-audio</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>ogg</string>
-					<string>oga</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.movie</string>
-				<string>public.avi</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>AVI container</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.avi</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>avi</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.movie</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>Apple QuickTime container</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.quicktime</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>mov</string>
-					<string>moov</string>
-					<string>qt</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.movie</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>DivX file</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.divx</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>divx</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.movie</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>DV file</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.dv</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>dv</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
 				<string>public.movie</string>
 			</array>
 			<key>UTTypeDescription</key>
@@ -835,40 +958,6 @@
 				<key>public.filename-extension</key>
 				<array>
 					<string>asf</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.audio</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>Windows Media Audio</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.wma</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>wma</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.movie</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>Windows Media Video</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.wmv</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>wmv</string>
 				</array>
 			</dict>
 		</dict>
@@ -1009,61 +1098,6 @@
 					<string>m2ts</string>
 					<string>mts</string>
 					<string>mt2s</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.movie</string>
-				<string>public.3gpp</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>3GPP File</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.3gpp</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>3gp</string>
-					<string>3gpp</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.movie</string>
-				<string>public.3gpp2</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>3GPP2 File</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.3gpp2</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>3g2</string>
-					<string>3gp2</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.audio</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>MIDI File</string>
-			<key>UTTypeIdentifier</key>
-			<string>io.iina.mid</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<array>
-					<string>mid</string>
 				</array>
 			</dict>
 		</dict>
