@@ -12,7 +12,7 @@
 @interface FFThumbnail: NSObject
 
 @property(nonatomic) NSImage * _Nullable image;
-@property(nonatomic) double realTime;
+@property(nonatomic) NSTimeInterval realTime;
 
 @end
 
