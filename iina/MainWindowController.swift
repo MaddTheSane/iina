@@ -2530,7 +2530,7 @@ class MainWindowController: NSWindowController, NSWindowDelegate {
       rightArrowLabel.isHidden = true
       // set speed to 0 if is fastforwarding
       if isFastforwarding {
-        player.setSpeed(1)
+        player.speed = 1
         isFastforwarding = false
       }
     }
@@ -2625,7 +2625,7 @@ class MainWindowController: NSWindowController, NSWindowDelegate {
     case .speed:
       isFastforwarding = true
       let speedValue = AppData.availableSpeedValues[speedValueIndex]
-      player.setSpeed(speedValue)
+      player.speed = speedValue
       if speedValueIndex == 5 {
         leftArrowLabel.isHidden = true
         rightArrowLabel.isHidden = true

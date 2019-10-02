@@ -105,11 +105,11 @@ extension MainMenuActionHandler {
 
   @objc func menuChangeSpeed(_ sender: NSMenuItem) {
     if sender.tag == 5 {
-      player.setSpeed(1)
+      player.speed = 1
       return
     }
     if let multiplier = sender.representedObject as? Double {
-      player.setSpeed(player.info.playSpeed * multiplier)
+      player.speed = (player.info.playSpeed * multiplier)
     }
   }
 

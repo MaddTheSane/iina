@@ -174,7 +174,7 @@ class PlayerCore: NSObject {
   @discardableResult
   func openURLs(_ urls: [URL], shouldAutoLoad autoLoad: Bool = true) -> Int? {
     guard !urls.isEmpty else { return 0 }
-    var urls = Utility.resolveURLs(urls)
+    let urls = Utility.resolveURLs(urls)
 
     // handle BD folders and m3u / m3u8 files first
     if urls.count == 1 && (isBDFolder(urls[0]) ||
@@ -606,8 +606,13 @@ class PlayerCore: NSObject {
   }
 
   /** Set speed. */
-  func setSpeed(_ speed: Double) {
-    mpv.setDouble(MPVOption.PlaybackControl.speed, speed)
+  var speed: Double {
+    get {
+      return mpv.getDouble(MPVOption.PlaybackControl.speed)
+    }
+    set {
+      mpv.setDouble(MPVOption.PlaybackControl.speed, newValue)
+    }
   }
 
   func setVideoAspect(_ aspect: String) {

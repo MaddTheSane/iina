@@ -585,7 +585,7 @@ class RemoteCommandController {
     // remoteCommand.changeShuffleModeCommand.addTarget {})
     remoteCommand.changePlaybackRateCommand.supportedPlaybackRates = [0.5, 1, 1.5, 2]
     remoteCommand.changePlaybackRateCommand.addTarget { event in
-      PlayerCore.lastActive.setSpeed(Double((event as! MPChangePlaybackRateCommandEvent).playbackRate))
+      PlayerCore.lastActive.speed = Double((event as! MPChangePlaybackRateCommandEvent).playbackRate)
       return .success
     }
     remoteCommand.skipForwardCommand.preferredIntervals = [15]
