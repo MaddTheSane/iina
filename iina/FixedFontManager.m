@@ -3,7 +3,7 @@
 @implementation FixedFontManager
 NS_ASSUME_NONNULL_BEGIN
 
-+ (NSArray *)typefacesForFontFamily:(nonnull NSString *)family {
++ (nullable NSArray *)typefacesForFontFamily:(nonnull NSString *)family {
   NSFontManager *fontManager = [self sharedFontManager];
   return [fontManager availableMembersOfFontFamily:family];
 }

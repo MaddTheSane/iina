@@ -81,7 +81,7 @@ class FontPickerWindowController: NSWindowController, NSTableViewDelegate, NSTab
       guard familyTableView.selectedRow >= 0 else { return }
       chosenFamily = isSearching ? filteredFontNames[familyTableView.selectedRow] : fontNames[familyTableView.selectedRow]
       if chosenFamily != nil {
-        chosenFontMembers = FixedFontManager.typefaces(forFontFamily: chosenFamily!.name) as? [[Any]]
+        chosenFontMembers = FixedFontManager.typefaces(forFontFamily: chosenFamily!.name)
         faceTableView.reloadData()
         faceTableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
         updatePreview()

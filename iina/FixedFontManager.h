@@ -3,7 +3,7 @@
 @interface FixedFontManager : NSFontManager
 NS_ASSUME_NONNULL_BEGIN
 
-+ (NSArray *)typefacesForFontFamily:(NSString *)family;
++ (nullable NSArray<NSArray*> *)typefacesForFontFamily:(NSString *)family;
 
 
 NS_ASSUME_NONNULL_END
