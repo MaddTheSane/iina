@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "toolbar_play.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "toolbar_play.png",
+      "filename" : "toolbar_play@2x.png",
       "scale" : "2x"
     },
     {

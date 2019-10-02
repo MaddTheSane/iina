@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "speedl-dark.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "speedl-dark.png",
+      "filename" : "speedl-dark@2x.png",
       "scale" : "2x"
     },
     {

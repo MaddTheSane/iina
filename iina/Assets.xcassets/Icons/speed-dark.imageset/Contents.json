@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "speed-dark.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "speed-dark.png",
+      "filename" : "speed-dark@2x.png",
       "scale" : "2x"
     },
     {

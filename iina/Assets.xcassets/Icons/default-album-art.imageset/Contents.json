@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "default-album-art.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "default-album-art.png",
+      "filename" : "default-album-art@2x.png",
       "scale" : "2x"
     },
     {

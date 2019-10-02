@@ -2,6 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "osc-bottom.png",
       "scale" : "1x"
     },
     {
