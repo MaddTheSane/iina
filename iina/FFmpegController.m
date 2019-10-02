@@ -40,7 +40,7 @@ return -1;\
 @interface FFmpegController () {
   NSMutableArray<FFThumbnail *> *_thumbnails;
   NSMutableArray<FFThumbnail *> *_thumbnailPartialResult;
-  NSMutableSet *_addedTimestamps;
+  NSMutableSet<NSNumber*> *_addedTimestamps;
   NSOperationQueue *_queue;
   double _timestamp;
 }

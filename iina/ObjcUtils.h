@@ -6,6 +6,8 @@
 //  Copyright © 2017 lhc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ObjcUtils : NSObject
